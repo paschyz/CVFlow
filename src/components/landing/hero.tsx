@@ -79,11 +79,10 @@ export function Hero() {
       <div className="relative max-w-4xl mx-auto text-center">
         {/* Badge */}
         <motion.div {...anim(0)}>
-          <span className="inline-flex items-center gap-2 rounded-full border border-hairline bg-surface-card/80 px-4 py-1.5">
+          <span className="inline-flex items-center gap-2 rounded-full border border-brand-blue/40 bg-brand-blue/7 px-4 py-1.5">
             <Sparkles className="size-3.5 text-brand-blue" />
-            <span className="font-mono text-xs tracking-[0.2em] text-brand-blue">{SITE.hero.eyebrow}</span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-green/10 px-2 py-0.5 text-[10px] font-medium text-brand-green">
-              <span className="size-1.5 rounded-full bg-brand-green" />
+            <span className="font-mono text-xs tracking-[0.1em] text-brand-blue">{SITE.hero.eyebrow}</span>
+            <span className="inline-flex items-center rounded-full bg-brand-green/10 px-2 py-0.5 text-[10px] font-semibold text-brand-green">
               {SITE.hero.badge}
             </span>
           </span>
@@ -92,12 +91,12 @@ export function Hero() {
         {/* Provider pills */}
         <motion.div {...anim(1)} className="mt-5 flex flex-wrap justify-center gap-3">
           {providers.map(({ name, Icon, sub }) => (
-            <span key={name} className="inline-flex items-center gap-2 rounded-full border border-hairline bg-surface-card/60 px-3 py-1.5 text-sm">
-              <span className="w-6 h-6 rounded-lg bg-surface-hover flex items-center justify-center">
+            <span key={name} className="inline-flex items-center gap-2 rounded-xl border border-hairline bg-surface-card/60 px-3 py-1.5 text-sm">
+              <span className="w-6 h-6 rounded-lg bg-surface-hover flex items-center justify-center shrink-0">
                 <Icon className="size-3.5" />
               </span>
-              <span className="font-medium">{name}</span>
-              <span className="text-xs text-muted-foreground">{sub}</span>
+              <span className="font-medium leading-none">{name}</span>
+              <span className={`text-xs leading-none ${sub === 'Gratuit' ? 'font-medium text-brand-green' : 'text-muted-foreground/50'}`}>{sub}</span>
             </span>
           ))}
         </motion.div>

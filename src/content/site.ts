@@ -12,8 +12,8 @@ export const SITE = {
   ],
   hero: {
     eyebrow: 'ANALYSE IA DE CV',
-    badge: 'NOUVEAU',
-    headline: ['Analysez vos CV', 'avec l\'IA en streaming.'],
+    badge: 'GRATUIT',
+    headline: ['Laissez l\'IA expliquer pourquoi', 'votre CV est ignoré.'],
     highlight: 'IA',
     sub: 'Les recruteurs passent 6 secondes sur un CV. Notre IA détecte chaque point faible et vous guide vers un CV qui retient l\'attention.',
     emphasis: 'Résultats en temps réel, directement dans votre navigateur.',
@@ -100,8 +100,9 @@ export const SITE = {
     blurb: 'CVFlow analyse vos CV avec l\'IA en streaming. Vos clés et données restent dans votre navigateur.',
     columns: [
       { title: 'Produit', links: [{ label: 'Application', href: '/app' }, { label: 'Fonctionnalités', href: '#features' }, { label: 'FAQ', href: '#faq' }] },
-      { title: 'Ressources', links: [{ label: 'Comment ça marche', href: '#how-it-works' }, { label: 'Documentation', href: '#' }, { label: 'Contact', href: '#' }] },
+      { title: 'Connect', links: [{ label: 'GitHub', href: 'https://github.com/paschyz/CVFlow' }, { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pascal-zhou/' }] },
     ],
+    builtBy: 'Built by Pascal Zhou',
     legal: '© 2026 CVFlow. Tous droits réservés.',
   },
 } as const
